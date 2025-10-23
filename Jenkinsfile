@@ -14,13 +14,13 @@ pipeline {
 
         stage('Build Docker image') {
             steps {
-                sh 'docker build -t flask-jenkins-demo .'
+                sh 'docker build -t Dockerfile .'
             }
         }
 
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 5000:5000 --name flask-demo flask-jenkins-demo || true'
+                sh 'docker run -d -p 5000:5000 --name flask-demo Dockerfile || true'
             }
         }
     }
