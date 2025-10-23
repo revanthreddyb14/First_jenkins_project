@@ -5,7 +5,7 @@ pipeline {
         stage('Clone repository') {
             steps {
                 git(
-                    url: 'https://github.com/revanthreddyb14/flask-docker-jenkins.git',
+                    url: 'https://github.com/revanthreddyb14/First_jenkins_project.git',
                     branch: 'main',
                     credentialsId: 'github-token'
                 )
